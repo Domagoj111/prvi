@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="forma-ispis.php" method="get">
+<input type="text" id="automobil_ime" name="automobil_ime" value="moj automobil"><br>
+<input type="button" id="automobil_upali" name="automobil_upali" value="Upali!"><br>
+<input type="checkbox" id="oprema" name="oprema" value="grijana sjedala"><label for="oprema">grijana sjedala</label><br>
+<input type="checkbox" id="oprema" name="oprema1" value="asr"><label for="oprema1">ASR</label><br>
+<input type="checkbox" id="oprema" name="oprema2" value="gumez"><label for="oprema2">zimske gume</label><br>
+<!-- radio-->
+<input type="radio" id="boja" name="boja" value="plava"><label for="boja">plava</label><br>
+<input type="radio" id="boja" name="boja" value="zuta"><label for="boja">žuta</label><br>
+<input type="radio" id="boja" name="boja" value="zelena"><label for="boja">zelena</label><br>
+
+<!-- select -->
+<select id="marka" name="marka">
+
+<optgroup  label="top Cars">
+    <option value="merc" >merc</option>
+    <option value="volvo" >volvo</option>
+    <option value="bmw" >bmw</option>
+    <option value="audi" selected>audi</option>
+</optgroup>
+<optgroup  label="other">
+    <option value="fiat" >fiat </option>
+</optgroup>
+
+</select>
+
+
+<input type="color"id="custom_boja"name="custom_boja" value="#669933" ><br>
+
+<input type="password"id="pass"name="pass" ><br>
+<input type="date"id="datum"name="datum" value="2024-12-24" ><br>
+<input type="datetime-local"id="datum"name="datum" value="2024-12-24" min="2024-06-01T08:30"
+max="2024-12-30T16:30"> <br>
+<textarea name="poruka" id="poruka" cols="22" rows="3">Uvdje unesi poruku</textarea>
+
+<input type="submit" value="posalji">
+
+        </form>
+    </body>
+</html>
