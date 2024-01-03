@@ -23,3 +23,15 @@ if ($a==$b){
 if ($a === $b){ // iste vrijednosti i istog tipa varijablr
     echo " brojevi a i b su identicni";
 }
+
+$text="<br> ovo je nki text";
+$text.="u njemu pisem pismo";
+$text.="lala";
+$text.=$poruka;
+$text.="u 123213";
+$text.=" ovo je kraj<br>";
+
+echo $text;
+
+var_dump($a==$b);
+var_dump($a!=$b);
