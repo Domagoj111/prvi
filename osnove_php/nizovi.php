@@ -50,11 +50,19 @@ print_r($asocijativno_voce);
 echo $asocijativno_voce['iz_uvoza'];
 
 #funkcija array filter
-function odd($var)
+function odd($var)  // neparni broj
 {
     // returns whether the input integer is odd
-    //return $var & 1; // return ($var%2!=0)?$var:'';
-    return ($var%2==0) ? $var : '';
+    //  1 | 1 = 1
+    //  1 & 1 = 1   <------ trazimo ovo
+    //  1 & 0 = 0
+    //  0 | 0 = 0
+    // binarni 001 010 011 100 101 ... 1010101010101
+    // dec       1   2   3   4   5   
+    return $var & 1; // return ($var%2!=0)?$var:'';
+
+    // (izraz true-false) ? true:false
+    //return ($var%2==0) ? $var : '';
 }
 
 function even($var)
