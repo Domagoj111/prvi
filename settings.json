@@ -1,0 +1,13 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.enableSmartCommit": true,
+    "php.validate.executablePath": "C:/xampp/php/php.exe",
+    "php.executablePath":"C:/xampp/php/php.exe",
+    "php.debug.executablePath": "C:/xampp/php/php.exe",
+    "workbench.startupEditor": "none",
+    "git.confirmSync": false,
+    "[php]": {
+    
+
+    }
+}
