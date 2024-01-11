@@ -4,7 +4,8 @@ header("Content-Type: application/json");
 //print_r($GLOBALS);
 $globalsJSON= json_encode($GLOBALS,JSON_PRETTY_PRINT);
 
-echo $globalsJSON;
+// Ispisi po potrebi
+//echo $globalsJSON;
 
 $file = 'globalne_varijable.json';
 // Open the file to get existing content
@@ -26,12 +27,26 @@ file_put_contents($file, $globalsJSON);
  $procitaniFile=file_get_contents($file,false,null,0,filesize($file));
 
  // ispisi cijeli file
- echo $procitaniFile;
+ // echo $procitaniFile;
+
+
 
 // ako želim x._SERVER.SERVER_SOFTWARE
+// dekodiraj JSON  (kao PHP objekt)
+$dekodiraniniz=json_decode($procitaniFile);
+
+//print_r($dekodiraniniz);
+//var_dump($dekodiraniniz);
+
+// OBJEKTNI ISPIS
+echo $dekodiraniniz->_SERVER->SCRIPT_NAME.PHP_EOL;
+
 // prevaci cijeli JSON u ARRAY  (asocijativni, jer smo stavili jedinicu)
 $dekodiraniniz=json_decode($procitaniFile,1);
 
-// ispisi samo varijablu iz niza 
-//print_r($dekodiraniniz);
-echo $dekodiraniniz['_SERVER']['SCRIPT_NAME'];
+
+// ISPIS KAO NIZ
+echo $dekodiraniniz['_SERVER']['SCRIPT_NAME'].PHP_EOL;
+
+
+
