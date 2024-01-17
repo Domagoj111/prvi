@@ -14,8 +14,19 @@ $data = [
 
 print_r(JmesPath\search($expression, $data));
 
+
+function htmlTable($jsondata){
+    $tabla="<table border='1'>";
+    foreach ($jsondata as $key => $value) {
+        $tabla.="<tr><td>".$value['title']."</td><td>".$value['author']."</td></tr>";
+    }
+    $tabla.="</table>";
+    return $tabla;
+}
 // ucitaj i enkodiraj u array
 $booksJson =json_decode(file_get_contents('knjige.json'),1);
+
+echo htmlTable($booksJson);
 
 print_r($booksJson);
 
