@@ -47,6 +47,14 @@
             "featuredImg": "\/images\/4ceb1885b653f68491a7052654377bf7.jpeg",
             "id": "24ca8c6af7f7a4299ac85e0c1e58648a",
             "createdAt": "1705615567"
+        },
+        {
+            "title": "Novi",
+            "shortDesc": "Prva proba, prvi post",
+            "content": "# Prvi naslov\r\n## podnaslov\r\n\r\n1. item1\r\n2. Item 2\r\n\r\n`echo $prva_varijabla;`\r\n\r\n**Ovo je boldano**\r\n\r\nOVO JE NORMALAN text\r\nmala slova isto rade",
+            "featuredImg": "\/images\/eefa0eb8e0181975d8edac37ed55f4d3.png",
+            "id": "14a36e833dd8be61b3d7df726d3eaa4d",
+            "createdAt": "1705685353"
         }
     ]
 }
