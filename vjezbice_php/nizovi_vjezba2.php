@@ -1,14 +1,27 @@
 <?php
+$users=[[
+    "ime"=>"bero",
+    "prezime"=>"juric",
+    "godine"=>44,
+    "spol"=>"M",   
+],
+[
+    "ime"=>"mara",
+    "prezime"=>"maric",
+    "godine"=>67,
+    "spol"=>"Z",   
+]
+];
 
-$users = array(
-    array(
-        "ime" => "Tarzan",
-        "prezime" => "Majmun",
-        "godine" => "29",
-        "spol"  => "muški"   );
-    array(
-        "ime" => "Jane",
-        "prezime" => "Marmun",
-        "godine" => "23",
-        "spol"  => "ženski",)
-    );
+print_r($users);
+unset($users[0]["spol"]);
+unset($users[1]["spol"]);
+print_r($users);
+
+$users[]=[
+    "ime"=>"mato",
+    "prezime"=>"matic",
+    "godine"=>44 
+];
+
+print_r($users);
